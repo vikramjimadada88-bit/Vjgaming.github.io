@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Free Fire Mod Menu APK</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  min-height:100vh;
+  font-family:Segoe UI,Arial,sans-serif;
+  background:#f2f2f2;
+}
+
+/* ===== CENTER SCREEN ===== */
+.screen{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+/* ===== RGB ANIMATION ===== */
+@keyframes rgb{
+  0%{border-color:#ff004c;box-shadow:0 0 15px #ff004c;}
+  25%{border-color:#00f7ff;box-shadow:0 0 15px #00f7ff;}
+  50%{border-color:#7cff00;box-shadow:0 0 15px #7cff00;}
+  75%{border-color:#ffae00;box-shadow:0 0 15px #ffae00;}
+  100%{border-color:#ff004c;box-shadow:0 0 15px #ff004c;}
+}
+
+/* ===== CARD ===== */
+.card{
+  width:100%;
+  max-width:420px;
+  background:#0b1220;
+  color:#e5e7eb;
+  border-radius:18px;
+  border:2px solid;
+  animation:rgb 6s linear infinite;
+  padding:18px;
+}
+
+/* ===== TITLE ===== */
+.title{
+  text-align:center;
+  font-size:22px;
+  font-weight:800;
+  background:linear-gradient(90deg,#00f7ff,#7cff00,#ffae00);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.meta{
+  text-align:center;
+  font-size:13px;
+  color:#9ca3af;
+  margin-top:5px;
+}
+
+/* ===== SECTION ===== */
+.section{
+  margin-top:14px;
+  padding:14px;
+  background:rgba(255,255,255,0.05);
+  border-radius:14px;
+}
+
+.section h3{
+  margin-bottom:8px;
+}
+
+/* ===== FEATURES ===== */
+.features{
+  list-style:none;
+}
+
+.features li{
+  margin:8px 0;
+  padding:10px;
+  background:#111827;
+  border-radius:12px;
+  text-align:center;
+}
+
+/* ===== BUTTON ===== */
+.download{
+  display:block;
+  margin-top:18px;
+  padding:14px;
+  text-align:center;
+  font-weight:800;
+  color:#000;
+  border-radius:14px;
+  text-decoration:none;
+  background:linear-gradient(90deg,#ff004c,#ffae00,#7cff00,#00f7ff);
+  animation:rgb 4s linear infinite;
+}
+
+/* ===== COUNTERS ===== */
+.counter{
+  margin-top:12px;
+  text-align:center;
+  font-weight:700;
+}
+
+.live{
+  margin-top:6px;
+  text-align:center;
+  color:#22c55e;
+}
+</style>
+</head>
+
+<body>
+
+<div class="screen">
+  <div class="card">
+
+    <div class="title">Free Fire Mod Menu APK</div>
+    <div class="meta">Action • Battle Royale • v2.209.1</div>
+    <div class="meta">Android 5.0+ • Updated 2025</div>
+
+    <div class="section">
+      <h3>✨ About</h3>
+      <p>
+        Free Fire Mod Menu APK provides premium features like unlimited
+        diamonds, unlocked skins and enhanced gameplay.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>🔥 Key Features</h3>
+      <ul class="features">
+        <li>🎯 Headshot Support</li>
+        <li>🚀 BR Ranking Boost</li>
+        <li>💎 Unlimited Diamonds</li>
+        <li>🧥 All Skins Unlocked</li>
+      </ul>
+    </div>
+
+    <a href="#" class="download">⬇ Download Free Fire Mod APK</a>
+
+    <div class="counter">🔥 Downloads: <span id="dl">3000</span></div>
+    <div class="live">🟢 Live Downloading: <span id="live">28</span> Users</div>
+
+  </div>
+</div>
+
+<script>
+let d=3000;
+setInterval(()=>{
+  d+=Math.floor(Math.random()*4)+1;
+  document.getElementById("dl").innerText=d;
+},3000);
+
+let l=28;
+setInterval(()=>{
+  l+=Math.floor(Math.random()*3)-1;
+  if(l<12) l=12;
+  document.getElementById("live").innerText=l;
+},2000);
+</script>
+
+</body>
+</html>
